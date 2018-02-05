@@ -1,0 +1,200 @@
+<domain type='kvm' id='4'>
+  <name>yzhao_vm</name>
+  <uuid>615b75ff-8d9d-45b7-b4f4-0dd89b61c25e</uuid>
+  <metadata xmlns:ns0="http://ovirt.org/vm/tune/1.0" xmlns:ovirt-vm="http://ovirt.org/vm/1.0">
+    <ns0:qos/>
+    <ovirt-vm:vm xmlns:ovirt-vm="http://ovirt.org/vm/1.0">
+    <ovirt-vm:clusterVersion>4.2</ovirt-vm:clusterVersion>
+    <ovirt-vm:destroy_on_reboot type="bool">False</ovirt-vm:destroy_on_reboot>
+    <ovirt-vm:launchPaused>false</ovirt-vm:launchPaused>
+    <ovirt-vm:memGuaranteedSize type="int">1024</ovirt-vm:memGuaranteedSize>
+    <ovirt-vm:minGuaranteedMemoryMb type="int">1024</ovirt-vm:minGuaranteedMemoryMb>
+    <ovirt-vm:resumeBehavior>auto_resume</ovirt-vm:resumeBehavior>
+    <ovirt-vm:startTime type="float">1517826151.8</ovirt-vm:startTime>
+    <ovirt-vm:device mac_address="00:1a:4a:16:01:01">
+        <ovirt-vm:network>ovirtmgmt</ovirt-vm:network>
+        <ovirt-vm:specParams/>
+        <ovirt-vm:vm_custom/>
+    </ovirt-vm:device>
+    <ovirt-vm:device devtype="disk" name="vda">
+        <ovirt-vm:domainID>851b1a32-2237-42b5-9277-331356a7b1d2</ovirt-vm:domainID>
+        <ovirt-vm:imageID>9fe8df22-1e4a-4803-a6b9-1615485e0102</ovirt-vm:imageID>
+        <ovirt-vm:poolID>66b34bc5-7c1b-4691-9ac0-0efc0dbb2fcc</ovirt-vm:poolID>
+        <ovirt-vm:volumeID>7422aaff-f0d4-4515-a0bc-db3041070331</ovirt-vm:volumeID>
+        <ovirt-vm:specParams/>
+        <ovirt-vm:vm_custom/>
+        <ovirt-vm:volumeChain>
+            <ovirt-vm:volumeChainNode>
+                <ovirt-vm:domainID>851b1a32-2237-42b5-9277-331356a7b1d2</ovirt-vm:domainID>
+                <ovirt-vm:imageID>9fe8df22-1e4a-4803-a6b9-1615485e0102</ovirt-vm:imageID>
+                <ovirt-vm:leaseOffset type="int">0</ovirt-vm:leaseOffset>
+                <ovirt-vm:leasePath>/rhev/data-center/mnt/10.66.148.11:_home_yzhao_nfs1/851b1a32-2237-42b5-9277-331356a7b1d2/images/9fe8df22-1e4a-4803-a6b9-1615485e0102/7422aaff-f0d4-4515-a0bc-db3041070331.lease</ovirt-vm:leasePath>
+                <ovirt-vm:path>/rhev/data-center/mnt/10.66.148.11:_home_yzhao_nfs1/851b1a32-2237-42b5-9277-331356a7b1d2/images/9fe8df22-1e4a-4803-a6b9-1615485e0102/7422aaff-f0d4-4515-a0bc-db3041070331</ovirt-vm:path>
+                <ovirt-vm:volumeID>7422aaff-f0d4-4515-a0bc-db3041070331</ovirt-vm:volumeID>
+            </ovirt-vm:volumeChainNode>
+            <ovirt-vm:volumeChainNode>
+                <ovirt-vm:domainID>851b1a32-2237-42b5-9277-331356a7b1d2</ovirt-vm:domainID>
+                <ovirt-vm:imageID>9fe8df22-1e4a-4803-a6b9-1615485e0102</ovirt-vm:imageID>
+                <ovirt-vm:leaseOffset type="int">0</ovirt-vm:leaseOffset>
+                <ovirt-vm:leasePath>/rhev/data-center/mnt/10.66.148.11:_home_yzhao_nfs1/851b1a32-2237-42b5-9277-331356a7b1d2/images/9fe8df22-1e4a-4803-a6b9-1615485e0102/c857960a-a61b-4b0f-b38e-e0994b806245.lease</ovirt-vm:leasePath>
+                <ovirt-vm:path>/rhev/data-center/mnt/10.66.148.11:_home_yzhao_nfs1/851b1a32-2237-42b5-9277-331356a7b1d2/images/9fe8df22-1e4a-4803-a6b9-1615485e0102/c857960a-a61b-4b0f-b38e-e0994b806245</ovirt-vm:path>
+                <ovirt-vm:volumeID>c857960a-a61b-4b0f-b38e-e0994b806245</ovirt-vm:volumeID>
+            </ovirt-vm:volumeChainNode>
+        </ovirt-vm:volumeChain>
+    </ovirt-vm:device>
+</ovirt-vm:vm>
+  </metadata>
+  <maxMemory slots='16' unit='KiB'>4194304</maxMemory>
+  <memory unit='KiB'>1048576</memory>
+  <currentMemory unit='KiB'>1048576</currentMemory>
+  <vcpu placement='static' current='1'>16</vcpu>
+  <resource>
+    <partition>/machine</partition>
+  </resource>
+  <sysinfo type='smbios'>
+    <system>
+      <entry name='manufacturer'>oVirt</entry>
+      <entry name='product'>RHEV Hypervisor</entry>
+      <entry name='version'>7.4-1.2.el7</entry>
+      <entry name='serial'>928EA9B0-6656-11E4-8784-D04CC4AC1500</entry>
+      <entry name='uuid'>615b75ff-8d9d-45b7-b4f4-0dd89b61c25e</entry>
+    </system>
+  </sysinfo>
+  <os>
+    <type arch='x86_64' machine='pc-i440fx-rhel7.3.0'>hvm</type>
+    <smbios mode='sysinfo'/>
+  </os>
+  <features>
+    <acpi/>
+  </features>
+  <cpu mode='custom' match='exact' check='full'>
+    <model fallback='forbid'>Haswell-noTSX</model>
+    <topology sockets='16' cores='1' threads='1'/>
+    <feature policy='require' name='vme'/>
+    <feature policy='require' name='f16c'/>
+    <feature policy='require' name='rdrand'/>
+    <feature policy='require' name='hypervisor'/>
+    <feature policy='require' name='arat'/>
+    <feature policy='require' name='xsaveopt'/>
+    <feature policy='require' name='abm'/>
+    <numa>
+      <cell id='0' cpus='0' memory='1048576' unit='KiB'/>
+    </numa>
+  </cpu>
+  <clock offset='variable' adjustment='-1' basis='utc'>
+    <timer name='rtc' tickpolicy='catchup'/>
+    <timer name='pit' tickpolicy='delay'/>
+    <timer name='hpet' present='no'/>
+  </clock>
+  <on_poweroff>destroy</on_poweroff>
+  <on_reboot>restart</on_reboot>
+  <on_crash>destroy</on_crash>
+  <pm>
+    <suspend-to-mem enabled='no'/>
+    <suspend-to-disk enabled='no'/>
+  </pm>
+  <devices>
+    <emulator>/usr/libexec/qemu-kvm</emulator>
+    <disk type='file' device='cdrom'>
+      <driver name='qemu' type='raw' error_policy='report' io='threads'/>
+      <source file='/rhev/data-center/mnt/10.66.148.11:_home_yzhao_nfs2/f7d00521-fcbb-4db1-89ca-aa2c1a034a00/images/11111111-1111-1111-1111-111111111111/CentOS-7-x86_64-DVD-1708.iso' startupPolicy='optional'/>
+      <backingStore/>
+      <target dev='hdc' bus='ide'/>
+      <readonly/>
+      <boot order='1'/>
+      <alias name='ide0-1-0'/>
+      <address type='drive' controller='0' bus='1' target='0' unit='0'/>
+    </disk>
+    <disk type='file' device='disk' snapshot='no'>
+      <driver name='qemu' type='qcow2' cache='none' error_policy='stop' io='threads'/>
+      <source file='/rhev/data-center/mnt/10.66.148.11:_home_yzhao_nfs1/851b1a32-2237-42b5-9277-331356a7b1d2/images/9fe8df22-1e4a-4803-a6b9-1615485e0102/7422aaff-f0d4-4515-a0bc-db3041070331'/>
+      <backingStore type='file' index='1'>
+        <format type='raw'/>
+        <source file='/rhev/data-center/mnt/10.66.148.11:_home_yzhao_nfs1/851b1a32-2237-42b5-9277-331356a7b1d2/images/9fe8df22-1e4a-4803-a6b9-1615485e0102/c857960a-a61b-4b0f-b38e-e0994b806245'/>
+        <backingStore/>
+      </backingStore>
+      <target dev='vda' bus='virtio'/>
+      <serial>9fe8df22-1e4a-4803-a6b9-1615485e0102</serial>
+      <alias name='virtio-disk0'/>
+      <address type='pci' domain='0x0000' bus='0x00' slot='0x06' function='0x0'/>
+    </disk>
+    <controller type='virtio-serial' index='0' ports='16'>
+      <alias name='virtio-serial0'/>
+      <address type='pci' domain='0x0000' bus='0x00' slot='0x04' function='0x0'/>
+    </controller>
+    <controller type='scsi' index='0' model='virtio-scsi'>
+      <alias name='scsi0'/>
+      <address type='pci' domain='0x0000' bus='0x00' slot='0x05' function='0x0'/>
+    </controller>
+    <controller type='usb' index='0' model='piix3-uhci'>
+      <alias name='usb'/>
+      <address type='pci' domain='0x0000' bus='0x00' slot='0x01' function='0x2'/>
+    </controller>
+    <controller type='pci' index='0' model='pci-root'>
+      <alias name='pci.0'/>
+    </controller>
+    <controller type='ide' index='0'>
+      <alias name='ide'/>
+      <address type='pci' domain='0x0000' bus='0x00' slot='0x01' function='0x1'/>
+    </controller>
+    <interface type='bridge'>
+      <mac address='00:1a:4a:16:01:01'/>
+      <source bridge='ovirtmgmt'/>
+      <target dev='vnet0'/>
+      <model type='virtio'/>
+      <filterref filter='vdsm-no-mac-spoofing'/>
+      <alias name='net0'/>
+      <address type='pci' domain='0x0000' bus='0x00' slot='0x03' function='0x0'/>
+    </interface>
+    <channel type='unix'>
+      <source mode='bind' path='/var/lib/libvirt/qemu/channels/615b75ff-8d9d-45b7-b4f4-0dd89b61c25e.ovirt-guest-agent.0'/>
+      <target type='virtio' name='ovirt-guest-agent.0' state='disconnected'/>
+      <alias name='channel0'/>
+      <address type='virtio-serial' controller='0' bus='0' port='1'/>
+    </channel>
+    <channel type='unix'>
+      <source mode='bind' path='/var/lib/libvirt/qemu/channels/615b75ff-8d9d-45b7-b4f4-0dd89b61c25e.org.qemu.guest_agent.0'/>
+      <target type='virtio' name='org.qemu.guest_agent.0' state='disconnected'/>
+      <alias name='channel1'/>
+      <address type='virtio-serial' controller='0' bus='0' port='2'/>
+    </channel>
+    <channel type='spicevmc'>
+      <target type='virtio' name='com.redhat.spice.0' state='connected'/>
+      <alias name='channel2'/>
+      <address type='virtio-serial' controller='0' bus='0' port='3'/>
+    </channel>
+    <input type='mouse' bus='ps2'>
+      <alias name='input0'/>
+    </input>
+    <input type='keyboard' bus='ps2'>
+      <alias name='input1'/>
+    </input>
+    <graphics type='spice' tlsPort='5900' autoport='yes' listen='10.66.8.176' defaultMode='secure' passwdValidTo='2018-02-05T10:26:06'>
+      <listen type='network' address='10.66.8.176' network='vdsm-ovirtmgmt'/>
+    </graphics>
+    <video>
+      <model type='qxl' ram='65536' vram='32768' vgamem='16384' heads='1' primary='yes'/>
+      <alias name='video0'/>
+      <address type='pci' domain='0x0000' bus='0x00' slot='0x02' function='0x0'/>
+    </video>
+    <memballoon model='virtio'>
+      <stats period='5'/>
+      <alias name='balloon0'/>
+      <address type='pci' domain='0x0000' bus='0x00' slot='0x07' function='0x0'/>
+    </memballoon>
+    <rng model='virtio'>
+      <backend model='random'>/dev/urandom</backend>
+      <alias name='rng0'/>
+      <address type='pci' domain='0x0000' bus='0x00' slot='0x08' function='0x0'/>
+    </rng>
+  </devices>
+  <seclabel type='dynamic' model='selinux' relabel='yes'>
+    <label>system_u:system_r:svirt_t:s0:c6,c543</label>
+    <imagelabel>system_u:object_r:svirt_image_t:s0:c6,c543</imagelabel>
+  </seclabel>
+  <seclabel type='dynamic' model='dac' relabel='yes'>
+    <label>+107:+107</label>
+    <imagelabel>+107:+107</imagelabel>
+  </seclabel>
+</domain>
+
